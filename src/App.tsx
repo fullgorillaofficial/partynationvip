@@ -26,10 +26,8 @@ function App() {
 
             <div className="max-w-2xl mx-auto bg-black/60 backdrop-blur-sm p-6 rounded-lg border border-yellow-500/40">
               <p className="text-gray-200 text-lg leading-relaxed">
-                All parties and events are for registered VIP members only.
-                All attendees must be on the VIP list at the door.
-                To register, fill in the form below with your full legal name (as it appears on your ID),
-                age, and your preferred method of contact for underground party access and invitations.
+                The Underground Awaits.
+                Off-list means no entry. Verified members only. Submit your name, age, and contact to unlock the next event.
               </p>
             </div>
           </div>
