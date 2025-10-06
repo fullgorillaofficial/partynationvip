@@ -64,19 +64,29 @@ export default function VIPRegistrationForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-black/70 backdrop-blur-md p-8 rounded-lg border border-yellow-500/30 shadow-2xl">
-      <div className="flex items-center gap-3 mb-6">
-        <UserPlus className="text-yellow-500" size={28} />
-        <h2 className="text-2xl font-bold text-yellow-500">VIP Registration</h2>
-      </div>
-
-      {error && (
-        <div className="mb-4 p-3 bg-red-500/20 border border-red-500 rounded text-red-200 text-sm">
-          {error}
+    <form onSubmit={handleSubmit} className="bg-black/70 backdrop-blur-md p-8 rounded-lg border border-yellow-500/30 shadow-2xl relative overflow-hidden">
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: 'url(/Untitled%20(1000%20x%201000%20px).png)',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+      <div className="relative z-10">
+        <div className="flex items-center gap-3 mb-6">
+          <UserPlus className="text-yellow-500" size={28} />
+          <h2 className="text-2xl font-bold text-yellow-500">Membership Registration</h2>
         </div>
-      )}
 
-      <div className="space-y-4">
+        {error && (
+          <div className="mb-4 p-3 bg-red-500/20 border border-red-500 rounded text-red-200 text-sm">
+            {error}
+          </div>
+        )}
+
+        <div className="space-y-4">
         <div>
           <label htmlFor="full_name" className="block text-sm font-medium text-gray-200 mb-1">
             Full Legal Name <span className="text-red-400">*</span>
@@ -141,15 +151,16 @@ export default function VIPRegistrationForm() {
             />
           </div>
         </div>
-      </div>
+        </div>
 
-      <button
-        type="submit"
-        disabled={loading}
-        className="w-full mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 disabled:bg-gray-600 text-black font-bold rounded transition-colors duration-200"
-      >
-        {loading ? 'Registering...' : 'Register for VIP Access'}
-      </button>
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 disabled:bg-gray-600 text-black font-bold rounded transition-colors duration-200"
+        >
+          {loading ? 'Registering...' : 'Register for VIP Access'}
+        </button>
+      </div>
     </form>
   );
 }
