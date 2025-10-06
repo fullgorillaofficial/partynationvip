@@ -36,11 +36,6 @@ function App() {
             <VIPRegistrationForm />
           </div>
 
-          <div className="mt-8 text-center">
-            <p className="text-gray-400 text-sm">
-              Questions? DM us on Instagram or text the number you provided.
-            </p>
-          </div>
         </div>
       </div>
     </div>
