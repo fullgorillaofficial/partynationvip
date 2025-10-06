@@ -64,12 +64,12 @@ export default function VIPRegistrationForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-black/70 backdrop-blur-md p-8 rounded-lg border border-yellow-500/30 shadow-2xl relative overflow-hidden">
+    <form onSubmit={handleSubmit} className="bg-black/50 backdrop-blur-md p-8 rounded-lg border border-yellow-500/30 shadow-2xl relative overflow-hidden">
       <div
-        className="absolute inset-0 opacity-40"
+        className="absolute inset-0 opacity-60"
         style={{
           backgroundImage: 'url(/Untitled%20(1000%20x%201000%20px).png)',
-          backgroundSize: 'contain',
+          backgroundSize: '60%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
