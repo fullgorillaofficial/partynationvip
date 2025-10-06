@@ -66,12 +66,14 @@ export default function VIPRegistrationForm() {
   return (
     <form onSubmit={handleSubmit} className="bg-black/70 backdrop-blur-md p-8 rounded-lg border border-yellow-500/30 shadow-2xl relative overflow-hidden">
       <div
-        className="absolute inset-0 opacity-10 bg-black"
+        className="absolute inset-0 opacity-10"
         style={{
           backgroundImage: 'url(/Gemini_Generated_Image_rriecsrriecsrrie.png)',
           backgroundSize: 'contain',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#000',
+          mixBlendMode: 'lighten'
         }}
       />
       <div className="relative z-10">
