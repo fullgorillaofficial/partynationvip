@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { UserPlus } from 'lucide-react';
+import { UserPlus, Key } from 'lucide-react';
 import { supabase, VIPMember } from '../lib/supabase';
 
 export default function VIPRegistrationForm() {
@@ -65,15 +65,9 @@ export default function VIPRegistrationForm() {
 
   return (
     <form onSubmit={handleSubmit} className="bg-black/50 backdrop-blur-md p-8 rounded-lg border border-yellow-500/30 shadow-2xl relative overflow-hidden">
-      <div
-        className="absolute inset-0 opacity-60"
-        style={{
-          backgroundImage: 'url(/Untitled%20(1000%20x%201000%20px).png)',
-          backgroundSize: '60%',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      />
+      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+        <Key className="text-yellow-500" size={400} strokeWidth={1} />
+      </div>
       <div className="relative z-10">
         <div className="flex items-center gap-3 mb-6">
           <UserPlus className="text-yellow-500" size={28} />
